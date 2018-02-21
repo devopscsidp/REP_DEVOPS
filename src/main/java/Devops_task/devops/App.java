@@ -1,27 +1,24 @@
-package Devops_task.devops;
+package Devops_task.Devops;
 
 import java.io.File;
-import java.util.Scanner;
 
 /**
  * Hello world!
  *
  */
-public class App
+public class App 
 {
     public static void main( String[] args )
-    {	
-    	Scanner in = new Scanner(System.in);
-        String dirPath = in.nextLine();
-    	//String dirPath = "C:\\Metadata";
-    	File dir = new File(dirPath);
-    	String[] files = dir.list();
-    	if (files.length == 0) {
-    	    System.out.println("The directory is empty");
-    	} else {
-    	    for (String aFile : files) {
-    	        System.out.println(aFile);
+    {
+    	File folder = new File("C:\\Users\\esaukun\\Desktop\\Docker & Kub training");
+    	File[] listOfFiles = folder.listFiles();
+
+    	    for (int i = 0; i < listOfFiles.length; i++) {
+    	      if (listOfFiles[i].isFile()) {
+    	        System.out.println("File " + listOfFiles[i].getName());
+    	      } else if (listOfFiles[i].isDirectory()) {
+    	        System.out.println("Directory " + listOfFiles[i].getName());
+    	      }
     	    }
-    	}
     }
 }
