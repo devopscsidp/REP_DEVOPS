@@ -15,15 +15,16 @@ public class App
     {	
     	final Logger logger = Logger.getLogger(App.class);
 
-        String dirPath = args[0];// in.nextLine();
-    	//String dirPath = "C:\\Metadata";
+        //String dirPath = args[0];// in.nextLine();
+    	String dirPath = "//root";
+    	
     	File dir = new File(dirPath);
     	String[] files = dir.list();
     	if (files.length == 0) {
-    		logger.info("The directory is empty");
+    		System.out.println("The directory is empty");
     	} else {
     	    for (String aFile : files) {
-    	    	logger.info(aFile);
+    	    	System.out.println(aFile);
     	    }
     	}
     }
