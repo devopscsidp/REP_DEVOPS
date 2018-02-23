@@ -13,7 +13,7 @@ public class App
     	//final Logger logger = Logger.getLogger(App.class);
 
         //String dirPath = args[0];// in.nextLine();
-    	String dirPath = "c://";
+    	String dirPath = "//root";
     	
     	File dir = new File(dirPath);
     	String[] files = dir.list();
