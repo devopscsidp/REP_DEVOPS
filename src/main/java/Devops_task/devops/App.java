@@ -13,7 +13,7 @@ public class App
 {
     public static void main( String[] args )
     {	
-    	final Logger logger = Logger.getLogger(App.class);
+    	//final Logger logger = Logger.getLogger(App.class);
 
         //String dirPath = args[0];// in.nextLine();
     	String dirPath = "//root";
