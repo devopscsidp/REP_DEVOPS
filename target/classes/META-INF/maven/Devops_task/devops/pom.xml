@@ -25,6 +25,24 @@
    
   </dependencies>
   
+  <build>
+	<plugins>
+		<plugin>
+			<!-- Build an executable JAR -->
+			<groupId>Devops_task</groupId>
+			<artifactId>devops</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<configuration>
+				<archive>
+					<manifest>
+						<mainClass>Devops_task.devops.App</mainClass>
+					</manifest>
+				</archive>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
+	
 </project>
 
 
