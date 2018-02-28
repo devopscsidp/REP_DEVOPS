@@ -1,4 +1,4 @@
-package Devops_task.devops;
+package devops.csidp;
 
 import java.io.File;
 
