@@ -14,6 +14,7 @@ public class App
 
         //String dirPath = args[0];// in.nextLine();
     	String dirPath = "//root";
+    	//String dirPath = "c://";
     	
     	File dir = new File(dirPath);
     	String[] files = dir.list();

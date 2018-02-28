@@ -18,6 +18,8 @@
 			<configuration>
 				<archive>
 					<manifest>
+						<addClasspath>true</addClasspath>
+           				<classpathPrefix>lib/</classpathPrefix>
 						<mainClass>Devops_task.devops.App</mainClass>
 					</manifest>
 				</archive>
