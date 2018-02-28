@@ -9,18 +9,18 @@
   <packaging>jar</packaging>
 
 <build>
+<sourceDirectory>src</sourceDirectory>
 	<plugins>
 		<plugin>
 			<!-- Build an executable JAR -->
 			<groupId>Devops_task</groupId>
 			<artifactId>devops</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>3.5.2</version>
 			<configuration>
 				<archive>
 					<manifest>
 						<addClasspath>true</addClasspath>
-           				<classpathPrefix>lib/</classpathPrefix>
-						<mainClass>Devops_task.devops.App</mainClass>
+           				<mainClass>Devops_task.devops.App</mainClass>
 					</manifest>
 				</archive>
 			</configuration>
