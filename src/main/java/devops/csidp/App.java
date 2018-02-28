@@ -12,8 +12,8 @@ public class App
     {	
     	//final Logger logger = Logger.getLogger(App.class);
 
-        //String dirPath = args[0];// in.nextLine();
-    	String dirPath = "//root";
+        String dirPath = args[0];// in.nextLine();
+    	//String dirPath = "//root";
     	//String dirPath = "c://";
     	
     	File dir = new File(dirPath);
