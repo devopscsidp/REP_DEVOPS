@@ -15,7 +15,7 @@ public class App
         String dirPath = args[0];// in.nextLine();
     	//String dirPath = "//root";
     	//String dirPath = "c://";
-    	
+        System.out.println("========================================================");
     	File dir = new File(dirPath);
     	String[] files = dir.list();
     	if (files.length == 0) {
@@ -25,5 +25,6 @@ public class App
     	    	System.out.println(aFile);
     	    }
     	}
+    	System.out.println("========================================================");
     }
 }
